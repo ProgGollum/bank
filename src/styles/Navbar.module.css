@@ -1,0 +1,17 @@
+.navList {
+    display: flex;
+    column-gap: 26px;
+}
+
+.navItem {
+    font-weight: 400;
+}
+
+.navItemActive {
+    background-color: #262626;
+    border-radius: 82px;
+    padding: 12px 24px;
+}
+
+
+

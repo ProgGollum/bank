@@ -1,0 +1,10 @@
+.footerMain {
+    margin: 100px 0 49.5px 0;
+    padding-top: 110px;
+}
+
+.footerLogo {
+    margin-bottom: 61px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+.contacts {
+    margin-bottom: 50px;
+}
+
+.contactsInner {
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px #262626 solid;
+    border-bottom: 1px #262626 solid;
+}
+
+.contactsList {
+    display: flex;
+    column-gap: 20px;
+}
+
+.contactsLink {
+    font-weight: 400;
+}
+
+.constactsItem {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}

@@ -1,0 +1,56 @@
+.welcomeInner {
+    padding-top: 100px;
+    display: flex;
+    column-gap: 120px;
+}
+
+/* Welcome__gen */
+.welcomeGen {
+    max-width: 826px;
+}
+
+.genChecked {
+    max-width: 357px;
+
+    display: flex;
+    column-gap: 6px;
+    padding: 10px 20px 10px 12px;
+    margin-bottom: 20px;
+
+    background-color: #262626;
+    border-radius: 61px;
+
+    line-height: 24px;
+}
+
+.genText {
+    color: #E4E4E7;
+    margin-bottom: 50px;
+}
+
+.genButton {
+    max-width: 183px;
+    padding: 18px 30px;
+
+    background-color: #CAFF33;
+    border-radius: 82px;
+
+    font-weight: 400;
+    color: #1C1C1C;
+}
+
+
+/* Welcome__finance */
+.welcomeFinance {
+    max-width: 515px;
+    background-color: #1A1A1A;
+    position: relative;
+}
+
+.financeGroup {
+    padding: 36px;
+    border: 0.87px solid #262626;
+    border-radius: 10.4px;
+    margin-bottom: 13px;
+}
+

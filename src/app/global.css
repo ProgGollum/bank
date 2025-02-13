@@ -1,0 +1,191 @@
+/*Fonst*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap');
+
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/*Global styles*/
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background: rgb(26, 26, 26);
+    color: #fff;
+}
+
+body::after {
+    display: inline-block;
+    content: " ";
+    width: 759px;
+    height: 611px;
+
+    position: absolute;
+    top: -112px;
+    left: -70px;
+    z-index: -1;
+
+    background-image: url(../images/abstract_design.svg);
+}
+
+a {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1626px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    margin-bottom: 14px;
+
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.sectionTitle span {
+    color: #CAFF33;
+}
+
+/*Global styles for Header*/
+
+.header {
+    margin: 52px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 34px;
+
+    border-radius: 100px;
+    background-color: #1C1C1C;
+    border: 1px solid #262626;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.signup {
+    font-weight: 400;
+}
+
+.login {
+    width: 109px;
+    padding: 14px 30px;
+
+    background-color: #CAFF33;
+    border-radius: 82px;
+
+    font-weight: 400;
+    color: #1C1C1C;
+}
+
+
+/*Global styles for Footer*/
+
+footer {
+    background-color: #1C1C1C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
