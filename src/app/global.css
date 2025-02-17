@@ -139,6 +139,10 @@ a {
     color: #CAFF33;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /*Global styles for Header*/
 
 .header {

@@ -1,0 +1,27 @@
+<svg width="98.000000" height="98.000000" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_11_86875_0" x1="49.000000" y1="0.000000" x2="49.000000" y2="98.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#CAFF33"/>
+			<stop offset="1.000000" stop-color="#CAFF33" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_11_86874_0" x1="49.000000" y1="-36.999992" x2="49.000000" y2="203.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#CAFF33"/>
+			<stop offset="0.467671" stop-color="#CAFF33" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_11_86874_1" x1="49.000015" y1="-116.499985" x2="49.000015" y2="153.000015" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#CAFF33"/>
+			<stop offset="0.716291" stop-color="#CAFF33" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="Icon Container" rx="49.000000" width="98.000000" height="98.000000" fill="url(#paint_linear_11_86875_0)" fill-opacity="0.050000"/>
+	<rect id="Icon" rx="18.500000" width="73.000000" height="73.000000" transform="translate(12.500000 12.500000)" fill="url(#paint_linear_11_86874_0)" fill-opacity="0.100000"/>
+	<rect id="briefcase.fill" width="31.571428" height="26.714287" transform="translate(33.213867 35.642822)" fill="#FFFFFF" fill-opacity="0"/>
+	<g opacity="0.000000">
+		<path id="Vector" d="M33.2139 35.6428L64.7852 35.6428L64.7852 62.3571L33.2139 62.3571L33.2139 35.6428Z" fill="#CAFF33" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<path id="Vector" d="M46.8789 53.1814C45.9243 53.1814 45.3652 52.644 45.3652 51.6796L45.3652 50.5636C41.3555 50.2881 37.3599 49.4614 33.2139 47.8771L33.2139 45.6039C38.3145 47.8633 43.4287 48.6624 48.9927 48.6624C54.5708 48.6624 59.6846 47.8633 64.7852 45.6039L64.7852 47.8771C60.6396 49.4614 56.6436 50.2881 52.6343 50.5636L52.6343 51.6796C52.6343 52.644 52.0747 53.1814 51.1201 53.1814L46.8789 53.1814ZM37.4277 62.3433L60.5713 62.3433C63.394 62.3433 64.7852 60.9656 64.7852 58.1411L64.7852 44.7358C64.7852 41.9115 63.394 40.5338 60.5713 40.5338L37.4277 40.5338C34.6187 40.5338 33.2139 41.9115 33.2139 44.7358L33.2139 58.1411C33.2139 60.9656 34.6187 62.3433 37.4277 62.3433ZM42.0786 41.7324L44.1924 41.7324L44.1924 39.2938C44.1924 38.2467 44.8062 37.6543 45.8696 37.6543L52.1294 37.6543C53.1934 37.6543 53.7935 38.2467 53.7935 39.2938L53.7935 41.7048L55.9072 41.7048L55.9072 39.4453C55.9072 36.8552 54.5571 35.6428 52.0884 35.6428L45.897 35.6428C43.5649 35.6428 42.0786 36.8552 42.0786 39.4453L42.0786 41.7324Z" fill="#CAFF33" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<rect id="Icon" rx="18.500000" width="73.000000" height="73.000000" transform="translate(12.500000 12.500000)" stroke="url(#paint_linear_11_86874_1)" stroke-opacity="0.200000" stroke-width="1.000000"/>
+</svg>

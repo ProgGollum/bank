@@ -1,18 +1,82 @@
-import React, {FC} from 'react';
+'use client'
+
+import React, {FC, useEffect, useRef, useState} from 'react';
 import Image from "next/image";
 import check from "@/images/check.svg";
+import { CiCirclePlus } from "react-icons/ci";
+
 import Link from "next/link";
 import s from "../../styles/Welcome.module.css"
 import Transactions from "@/components/Transactions/Transactions";
 import {Itransaction} from "@/types/types";
+import Block from "@/components/ExchangeBlock/Block";
+import axios from 'axios'
 
-const Welcome:FC = () => {
+interface RateData {
+    [key: string]: number; // любой ключ - это строка, а значение - число
+}
+
+
+const Welcome: FC = () => {
 
     const transactions: Itransaction[] = [
         {id: 1, title: "Transaction", name: "Dzubenko Konstantin", cost: "-$15.00"},
         {id: 2, title: "Transaction", name: "Bondarenko Cyrill", cost: "-$57.00"},
-        {id: 3, title: "Transaction", name: "Dann Nikolay", cost: "-$100.00"}
+        {id: 3, title: "Transaction", name: "Dann Nikolay", cost: "+$100.00"}
     ]
+
+    const [fromCurrency, setFromCurrency] = useState<string>('USD')
+    const [toCurrency, setToCurrency] = useState<string>('EUR')
+    const [fromPrice, setFromPrice] = useState<number>(1)
+    const [toPrice, setToPrice] = useState<number>(0)
+
+    // const [rates, setRates] = useState<RateData>({})
+    const ratesRef = useRef<RateData>({})
+    const fetchData = async () => {
+        try {
+            const response = await axios("https://www.cbr-xml-daily.ru/latest.js")
+            ratesRef.current = response.data.rates;
+            onChangeFromPrice(1);
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+
+    const onChangeFromPrice = (value: number) => {
+        if (ratesRef.current[fromCurrency] && ratesRef.current[toCurrency]) {
+            const price = value / ratesRef.current[fromCurrency];
+            const result = price * ratesRef.current[toCurrency];
+            setFromPrice(value);
+            setToPrice(result);
+        } else {
+            console.warn("Rates are not loaded or invalid currency");
+        }
+    }
+
+    const onChangeToPrice = (value: number) => {
+        if (ratesRef.current[fromCurrency] && ratesRef.current[toCurrency]) {
+            const result = (ratesRef.current[fromCurrency] / ratesRef.current[toCurrency]) * value;
+            setFromPrice(result);
+            setToPrice(value);
+        } else {
+            console.warn("Rates are not loaded or invalid currency");
+        }
+    }
+
+    useEffect(() => {
+        onChangeFromPrice(fromPrice)
+    }, [fromCurrency]);
+
+    useEffect(() => {
+        if (toPrice >= 0) { // Проверяем, что toPrice не отрицательный
+            onChangeToPrice(toPrice);
+        }
+    }, [toCurrency]);
 
     return (
         <section>
@@ -39,12 +103,37 @@ const Welcome:FC = () => {
                     <div className={s.welcomeFinance}>
                         <div className={s.financeGroup}>
                             <Transactions transactions={transactions}/>
+                            <div>
+                                <h3 className={s.finance__exchangeTitle}>Money Exchange</h3>
+                                <div>
+                                    <Block
+                                        value={fromPrice}
+                                        currency={fromCurrency}
+                                        onChangeCurrency={setFromCurrency}
+                                        onChangeValue={onChangeFromPrice}
+                                    />
+                                    <Block
+                                        value={toPrice}
+                                        currency={toCurrency}
+                                        onChangeCurrency={setToCurrency}
+                                        onChangeValue={onChangeToPrice}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className={s.profit}>
+                            <CiCirclePlus size={"3rem"} style={{color: "#CAFF33"}}/>
+                            <div>
+                                <p className={s.profit__value}>+ $5000,00</p>
+                                <p className={s.profit__text}>Monthly Income</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     );
-};
+}
+
 
 export default Welcome;

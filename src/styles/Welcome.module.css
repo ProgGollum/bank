@@ -47,10 +47,59 @@
     position: relative;
 }
 
+.welcomeFinance::after {
+    display: inline-block;
+    content: "";
+    width: 418px;
+    height: 383px;
+    position: absolute;
+    top: -10px;
+    right: -230px;
+    background-image: url(../images/finance-abstract.svg);
+    z-index: -3;
+}
+
 .financeGroup {
     padding: 36px;
     border: 0.87px solid #262626;
     border-radius: 10.4px;
     margin-bottom: 13px;
+}
+
+
+
+.finances {
+    background-color: #fff;
+}
+
+.finance__exchangeTitle {
+    font-size: 17.34px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+.profit {
+    position: absolute;
+    top: -43px;
+    left: -61px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+
+    background-color: #22251B;
+    border-radius: 10.4px;
+    padding: 13.87px 17.34px;
+}
+
+.profit__value {
+    font-size: 17.34px;
+    font-weight: 400 ;
+}
+
+.profit__text {
+    font-size: 14px;
+    font-weight: 300;
 }
 
