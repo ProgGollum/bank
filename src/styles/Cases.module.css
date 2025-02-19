@@ -1,0 +1,169 @@
+.cases__info {
+    margin-bottom: 80px;
+    color: #B3B3B3;
+}
+
+.cases__for_individual {
+    margin-bottom: 60px;
+
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+
+}
+
+.for__individual_cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+    max-width: 748px;
+    padding: 50px;
+
+    background-color: #1C1C1C;
+    border-radius: 20px;
+
+    position: relative;
+    z-index: -2;
+}
+
+.for__individual_cards::after {
+    display: inline-block;
+
+    content: "";
+    width: 224px;
+    height: 213px;
+
+    background-image: url(../images/for__individual__abstract.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    flex-grow: 0;
+}
+
+.for__individual_list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.for__individual_list__first {
+    margin-bottom: 20px;
+}
+
+.for__individual_item {
+    width: 314px;
+    height: 182px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: #1A1A1A;
+    border-radius: 16px;
+
+
+}
+
+.item__img {
+    margin-bottom: 24px;
+}
+
+.item__text {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+
+.for__individual_general {
+    max-width: 748px;
+}
+
+.general__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.general__text {
+    margin-bottom: 62px;
+    color: #B3B3B3;
+}
+
+.general__percents {
+    margin-bottom: 62px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.general__percent {
+    width: 183px;
+}
+
+.general__percent_center {
+    width: 283px;
+    padding: 0 50px;
+    border-right: 1px #262626 dashed;
+    border-left: 1px #262626 dashed;
+}
+
+.percent__value {
+    margin-bottom: 5px;
+
+    font-size: 58px;
+    font-weight: 500;
+    color: #CAFF33;
+}
+
+.percent__text {
+    color: #B3B3B3;
+}
+
+.general__button {
+    padding: 18px 24px;
+
+    background-color: #1C1C1C;
+    border-radius: 82px;
+    border: 1px #262626 solid;
+
+    font-weight: 400;
+}
+
+.cases__for_business {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.for__business_cards {
+    max-width: 748px;
+    padding: 50px;
+
+    background-color: #1C1C1C;
+    border-radius: 20px;
+
+    position: relative;
+    z-index: -2;
+}
+
+.for__business_cards::before {
+    display: inline-block;
+
+    content: "";
+    width: 224px;
+    height: 213px;
+
+    background-image: url(../images/for__individual__abstract__right.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    flex-grow: 0;
+}

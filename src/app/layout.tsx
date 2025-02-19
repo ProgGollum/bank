@@ -1,6 +1,8 @@
 import "./global.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 export const metadata = {
     title: 'Next.js',

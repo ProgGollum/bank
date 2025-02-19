@@ -1,0 +1,58 @@
+.testimonials {
+    margin-bottom: 150px;
+}
+
+.testimonials__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.testimonials__info {
+    max-width: 910px;
+    color: #b3b3b3;
+
+}
+
+.tabs {
+    display: flex;
+
+    background-color: #1C1C1C;
+    max-width: 386px;
+    padding: 14px;
+    border-radius: 82px;
+}
+
+.tab {
+    padding: 14px 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tab__active {
+    padding: 14px 24px;
+
+    background-color: #CAFF33;
+    border-radius: 140px;
+
+    color: #1C1C1C;
+    font-weight: 400;
+}
+
+.slide {
+    text-align: center;
+    align-items: center;
+    &[data-inactive] {
+        opacity: 0;
+        cursor: default;
+    }
+}
+
+.slide_img {
+    margin-bottom: 60px;
+}
+
+.slide_text {
+    margin-bottom: 50px;
+}

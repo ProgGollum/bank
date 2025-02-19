@@ -1,0 +1,72 @@
+.features {
+    margin-bottom: 150px;
+}
+
+.features__info {
+    max-width: 1296px;
+    margin-bottom: 80px;
+    color: #B3B3B3;
+}
+
+.features__tabulation {
+    max-width: 308px;
+    margin-right: 30px;
+
+    height: 337px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    background-color: #1C1C1C;
+    border-radius: 12px;
+}
+
+.features__tabulation_button {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 18px 24px 18px 24px;
+
+    background-color: #1A1A1A;
+    border-radius: 100px;
+
+    font-weight: 400;
+}
+
+.button__active {
+    color: #CAFF33;
+}
+
+
+
+.features__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.features__card {
+    max-width: 614px;
+    padding: 50px;
+
+    background-color: #1C1C1C;
+    border-radius: 12px;
+}
+
+.features__card_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.features__card_title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.features__card_text {
+    color: #B3B3B3;
+}

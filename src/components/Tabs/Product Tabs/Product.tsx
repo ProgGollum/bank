@@ -2,9 +2,9 @@
 
 import React, {useState} from 'react';
 import s from "../../../styles/Product.module.css"
-import Image from "next/image";
 
-import bag from "../../../images/bag.svg"
+import { IoBriefcase } from "react-icons/io5";
+
 import classNames from "classnames";
 
 const Product = () => {
@@ -41,7 +41,7 @@ const Product = () => {
                 </div>
                 <ul className={classNames(s.product__cards, isActive === 1 ? s.product__cards_active : {})}>
                     <li className={s.product__card}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Checking Accounts</h3>
                         <p className={s.product__card_text}>
                             Enjoy easy and convenient access to your funds with our range of checking
@@ -50,7 +50,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card_center}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Savings Accounts</h3>
                         <p className={s.product__card_text}>
                             Build your savings with our competitive interest rates and flexible savings account options.
@@ -59,7 +59,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Loans and Mortgages</h3>
                         <p className={s.product__card_text}>
                             Realize your dreams with our flexible loan and mortgage options. From personal loans to home
@@ -71,7 +71,7 @@ const Product = () => {
                 </ul>
                 <ul className={classNames(s.product__cards, isActive === 2 ? s.product__cards_active : {})}>
                     <li className={s.product__card}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Loans and Mortgages</h3>
                         <p className={s.product__card_text}>
                             Realize your dreams with our flexible loan and mortgage options. From personal loans to home
@@ -81,7 +81,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card_center}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Savings Accounts</h3>
                         <p className={s.product__card_text}>
                             Build your savings with our competitive interest rates and flexible savings account options.
@@ -90,7 +90,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card}>
-                        <Image className={s.product__card_icon} src={bag} alt={""}/>
+                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Checking Accounts</h3>
                         <p className={s.product__card_text}>
                             Enjoy easy and convenient access to your funds with our range of checking
