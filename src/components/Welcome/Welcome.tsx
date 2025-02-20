@@ -122,7 +122,7 @@ const Welcome: FC = () => {
                             </div>
                         </div>
                         <div className={s.profit}>
-                            <CiCirclePlus size={"3rem"} style={{color: "#CAFF33"}}/>
+                            <CiCirclePlus className={s.profit__img}/>
                             <div>
                                 <p className={s.profit__value}>+ $5000,00</p>
                                 <p className={s.profit__text}>Monthly Income</p>

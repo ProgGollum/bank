@@ -37,7 +37,7 @@ const Faq = () => {
                     <h2 className="sectionTitle"><span>Frequently</span> Asked Questions</h2>
                     <p className={s.question__info}>Still you have any questions? Contact our Team via <a
                         href="mailto:support@yourbank.com">support@yourbank.com</a></p>
-                    <ul className={s.question__list}>
+                    <ul className={classNames(s.question__list, visible === 4 ? s.question__blackout : {})}>
                         {items.slice(0, visible).map((item) =>
                             <li className={s.question__list_item} key={item.id}>
                                 <h3 className={s.item__title}>{item.title}</h3>

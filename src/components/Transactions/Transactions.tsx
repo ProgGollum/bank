@@ -24,7 +24,7 @@ const Transactions: FC<TransactionsProps> = ({transactions}) => {
                             <p className={s.transactionMainName}>{transaction.name}</p>
                         </div>
                     </div>
-                    <div>{transaction.cost}</div>
+                    <div className={s.transactionCoast}>{transaction.cost}</div>
                 </div>
             )}
         </div>

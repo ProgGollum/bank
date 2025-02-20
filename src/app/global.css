@@ -161,6 +161,11 @@ a {
     border: 1px solid #262626;
 }
 
+.header__logo {
+    width: 156px;
+    height: 40px;
+}
+
 .buttons {
     display: flex;
     align-items: center;
@@ -180,6 +185,52 @@ a {
 
     font-weight: 400;
     color: #1C1C1C;
+}
+
+@media(max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    body::after {
+        width: 547px;
+        height: 440px;
+    }
+
+    .container {
+        max-width: 1310px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .sectionTitle {
+        font-size: 38px;
+
+        margin-bottom: 10px;
+    }
+
+    .header {
+        margin: 30px 0;
+    }
+
+    .header__inner {
+        padding: 14px 24px 14px 24px;
+    }
+
+    .buttons {
+        column-gap: 20px;
+    }
+
+    .signup {
+        font-size: 14px;
+    }
+
+    .login {
+        width: 87px;
+        padding: 12px 24px;
+
+        font-size: 14px;
+    }
 }
 
 

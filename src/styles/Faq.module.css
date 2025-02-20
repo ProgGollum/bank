@@ -13,6 +13,24 @@
     gap: 30px;
 }
 
+.question__blackout {
+    position: relative;
+}
+
+.question__blackout::after {
+    display: inline-block;
+
+    content: "";
+    width: 1595px;
+    height: 275px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(180.00deg, rgba(25, 25, 25, 0), rgb(25, 25, 25) 100%);
+}
+
 .question__list_item {
     max-width: 782.5px;
     padding: 50px;

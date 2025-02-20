@@ -42,3 +42,23 @@
     background-color: #CAFF33;
     color: #000000;
 }
+
+
+
+@media(max-width: 1440px) {
+    .block {
+        font-size: 12px;
+        padding: 17px;
+        margin-top: 15px;
+    }
+
+    .input {
+        font-size: 12px;
+        padding: 17px;
+        margin-top: 15px;
+    }
+
+    .li {
+        padding: 6px 10px;
+    }
+}

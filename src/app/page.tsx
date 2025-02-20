@@ -5,6 +5,7 @@ import Cases from "@/components/Cases/Cases";
 import Features from "@/components/Tabs/Features Tabs/Features";
 import Faq from "@/components/FAQ/Faq";
 import Testimonials from "@/components/Tabs/Testimonials/Testimonials";
+import Banner from "@/components/Banner/Banner";
 
 export default function () {
     return (
@@ -15,6 +16,7 @@ export default function () {
             <Features/>
             <Faq/>
             <Testimonials/>
+            <Banner/>
         </main>
     )
 }

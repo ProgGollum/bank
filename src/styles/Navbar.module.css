@@ -13,5 +13,11 @@
     padding: 12px 24px;
 }
 
+@media(max-width: 1440px) {
+    .navItem {
+        font-size: 14px;
+    }
+}
+
 
 

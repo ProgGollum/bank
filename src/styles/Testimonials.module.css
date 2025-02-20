@@ -40,13 +40,17 @@
     font-weight: 400;
 }
 
+.carousel {
+    display: none;
+}
+
+.carousel__active {
+    display: block;
+}
+
 .slide {
     text-align: center;
     align-items: center;
-    &[data-inactive] {
-        opacity: 0;
-        cursor: default;
-    }
 }
 
 .slide_img {

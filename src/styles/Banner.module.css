@@ -1,0 +1,44 @@
+.banner {
+    margin-bottom: 150px;
+}
+
+.banner__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px;
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 20px;
+
+    background: rgb(28, 28, 28);
+
+    position: relative;
+}
+
+.banner__inner::after {
+    display: inline-block;
+
+    content: "";
+    width: 260px;
+    height: 283px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/banner__abstract.svg);
+}
+
+.banner__text {
+    color: #B3B3B3;
+    max-width: 1103px;
+}
+
+.banner__button {
+    padding: 18px 30px;
+    border-radius: 82px;
+    background-color: #CAFF33;
+    color: #1C1C1C;
+    font-weight: 400;
+}
