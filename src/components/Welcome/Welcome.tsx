@@ -8,7 +8,7 @@ import { CiCirclePlus } from "react-icons/ci";
 import Link from "next/link";
 import s from "../../styles/Welcome.module.css"
 import Transactions from "@/components/Transactions/Transactions";
-import {Itransaction} from "@/types/types";
+import {ITransaction} from "@/types/types";
 import Block from "@/components/ExchangeBlock/Block";
 import axios from 'axios'
 
@@ -19,7 +19,7 @@ interface RateData {
 
 const Welcome: FC = () => {
 
-    const transactions: Itransaction[] = [
+    const transactions: ITransaction[] = [
         {id: 1, title: "Transaction", name: "Dzubenko Konstantin", cost: "-$15.00"},
         {id: 2, title: "Transaction", name: "Bondarenko Cyrill", cost: "-$57.00"},
         {id: 3, title: "Transaction", name: "Dann Nikolay", cost: "+$100.00"}

@@ -189,3 +189,77 @@
     }
 }
 
+@media(max-width: 390px) {
+    .welcomeInner {
+        flex-direction: column;
+        row-gap: 5rem;
+        padding-top: 0;
+    }
+
+    .welcomeGen {
+        max-width: 358px;
+    }
+
+    .genChecked {
+        max-width: 245px;
+        font-size: 0.75rem;
+        margin: 0 auto 0.75rem;
+    }
+
+    .genText {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .genButton {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
+
+    /* Welcome__finance */
+    .welcomeFinance {
+        max-width: 305px;
+        margin: 0 auto;
+    }
+
+    .welcomeFinance::after {
+        width: 220px;
+        height: 200px;
+
+        top: -60px;
+        right: -50px;
+    }
+
+    .financeGroup {
+        padding: 1.25rem;
+    }
+
+
+    .finance__exchangeTitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .profit {
+        column-gap: 5px;
+        padding: 8px 10px;
+        left: -36px;
+    }
+
+    .profit__value {
+        font-size: 13px;
+    }
+
+    .profit__text {
+        font-size: 11px;
+    }
+
+    .profit__img {
+        width: 30px;
+        height: 30px;
+    }
+}
+

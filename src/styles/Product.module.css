@@ -74,6 +74,7 @@
 
 .product__card_icon {
     margin-bottom: 30px;
+    font-size: 3rem;
 }
 
 .product__card_title {
@@ -84,4 +85,53 @@
 
 .product__card_text {
     color: #B3B3B3;
+}
+
+
+
+@media(max-width: 1440px) {
+    .product {
+        margin: 120px 0;
+    }
+
+    .product__information {
+        margin-bottom: 80px;
+    }
+
+    .product__information_text {
+        max-width: 830px;
+    }
+
+    .tabs {
+        max-width: 300px;
+        padding: 12px;
+    }
+
+    .tab {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .product__cards {
+        column-gap: 40px;
+    }
+
+    .product__card {
+        max-width: 373px;
+    }
+
+    .product__card_center {
+        max-width: 453px;
+        padding: 0 40px;
+    }
+
+    .product__card_icon {
+        margin-bottom: 24px;
+        font-size: 2rem;
+    }
+
+    .product__card_title {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
 }

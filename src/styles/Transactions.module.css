@@ -91,3 +91,39 @@
         font-size: 16px;
     }
 }
+
+@media(max-width: 390px) {
+    .financeTransactions {
+        max-width: 265px;
+        row-gap: 0.65rem;
+        margin-bottom: 1rem;
+    }
+
+    .transactionsTitle {
+        font-size: 0.75rem;
+        margin-bottom: 0.65rem;
+    }
+
+    .transaction {
+        max-width: 247px;
+        padding: 8px 12px;
+    }
+
+    .transactionMainImg {
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+    }
+
+    .transactionMainType {
+        font-size: 10px;
+    }
+
+    .transactionMainName {
+        font-size: 12px;
+    }
+
+    .transactionCoast {
+        font-size: 14px;
+    }
+}

@@ -10,7 +10,7 @@ interface NavbarProps {
 
 const Navbar:FC<NavbarProps> = ({color, justifyContent, display}) => {
     return (
-        <nav style={{justifyContent, display}}>
+        <nav className={s.navBar} style={{justifyContent, display}}>
             <ul className={s.navList}>
                 <li>
                     <Link className={s.navItem} style={{color}} href="/">Home</Link>

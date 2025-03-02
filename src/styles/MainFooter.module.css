@@ -4,7 +4,15 @@
 }
 
 .footerLogo {
-    margin-bottom: 61px;
+    margin: 0 auto 61px;
     display: flex;
-    justify-content: center;
+    width: 155px;
+    height: 40px;
+}
+
+@media(max-width: 1440px) {
+    .footerLogo {
+        width: 116px;
+        height: 30px;
+    }
 }

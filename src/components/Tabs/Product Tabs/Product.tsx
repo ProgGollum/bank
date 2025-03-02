@@ -8,9 +8,9 @@ import { IoBriefcase } from "react-icons/io5";
 import classNames from "classnames";
 
 const Product = () => {
-    const [isActive, setIsActive] = useState(1)
+    const [isActive, setIsActive] = useState<string>("individual")
 
-    const toggleTab = (index:number) => {
+    const toggleTab = (index:string) => {
         setIsActive(index);
     }
 
@@ -26,22 +26,22 @@ const Product = () => {
                     </p>
                     <div className={s.tabs}>
                         <div
-                            className={classNames(s.tab, isActive === 1 ? s.tab__active : {})}
-                            onClick={() => toggleTab(1)}
+                            className={classNames(s.tab, isActive === "individual" ? s.tab__active : {})}
+                            onClick={() => toggleTab("individual")}
                         >
                             For Individuals
                         </div>
                         <div
-                            className={classNames(s.tab, isActive === 2 ? s.tab__active : {})}
-                            onClick={() => toggleTab(2)}
+                            className={classNames(s.tab, isActive === "business" ? s.tab__active : {})}
+                            onClick={() => toggleTab("business")}
                         >
                             For Businesses
                         </div>
                     </div>
                 </div>
-                <ul className={classNames(s.product__cards, isActive === 1 ? s.product__cards_active : {})}>
+                <ul className={classNames(s.product__cards, isActive === "individual" ? s.product__cards_active : {})}>
                     <li className={s.product__card}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Checking Accounts</h3>
                         <p className={s.product__card_text}>
                             Enjoy easy and convenient access to your funds with our range of checking
@@ -50,7 +50,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card_center}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Savings Accounts</h3>
                         <p className={s.product__card_text}>
                             Build your savings with our competitive interest rates and flexible savings account options.
@@ -59,7 +59,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Loans and Mortgages</h3>
                         <p className={s.product__card_text}>
                             Realize your dreams with our flexible loan and mortgage options. From personal loans to home
@@ -69,9 +69,9 @@ const Product = () => {
                         </p>
                     </li>
                 </ul>
-                <ul className={classNames(s.product__cards, isActive === 2 ? s.product__cards_active : {})}>
+                <ul className={classNames(s.product__cards, isActive === "business" ? s.product__cards_active : {})}>
                     <li className={s.product__card}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Loans and Mortgages</h3>
                         <p className={s.product__card_text}>
                             Realize your dreams with our flexible loan and mortgage options. From personal loans to home
@@ -81,7 +81,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card_center}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Savings Accounts</h3>
                         <p className={s.product__card_text}>
                             Build your savings with our competitive interest rates and flexible savings account options.
@@ -90,7 +90,7 @@ const Product = () => {
                         </p>
                     </li>
                     <li className={s.product__card}>
-                        <IoBriefcase className={s.product__card_icon} size={"3rem"} color={"#CAFF33"}/>
+                        <IoBriefcase className={s.product__card_icon} color={"#CAFF33"}/>
                         <h3 className={s.product__card_title}>Checking Accounts</h3>
                         <p className={s.product__card_text}>
                             Enjoy easy and convenient access to your funds with our range of checking

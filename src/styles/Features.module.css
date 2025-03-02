@@ -67,6 +67,64 @@
     font-weight: 400;
 }
 
+.features__card_icon {
+    font-size: 3rem;
+}
+
 .features__card_text {
     color: #B3B3B3;
+}
+
+
+
+@media(max-width: 1440px) {
+    .features {
+        margin-bottom: 7.5rem;
+    }
+
+    .features__info {
+        max-width: 1030px;
+        margin-bottom: 3.75rem;
+    }
+
+    .features__tabulation {
+        max-width: 245px;
+        height: 267px;
+
+        margin-right: 1.25rem;
+        padding: 2.5rem;
+        row-gap: 1.25rem;
+
+        border-radius: 0.5rem;
+    }
+
+    .features__tabulation_button {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.25rem;
+    }
+
+
+
+    .features__cards {
+        gap: 1.25rem;
+    }
+
+    .features__card {
+        max-width: 498px;
+        padding: 2.5rem;
+
+        border-radius: 0.7rem;
+    }
+
+    .features__card_name {
+        margin-bottom: 1.5rem;
+    }
+
+    .features__card_title {
+        font-size: 1.2rem;
+    }
+
+    .features__card_icon {
+        font-size: 2rem;
+    }
 }

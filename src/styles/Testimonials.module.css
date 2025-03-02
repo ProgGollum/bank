@@ -53,10 +53,54 @@
     align-items: center;
 }
 
+.slide p:last-child {
+    color: #CAFF33;
+}
+
 .slide_img {
     margin-bottom: 60px;
+    font-size: 3rem;
 }
 
 .slide_text {
     margin-bottom: 50px;
+}
+
+
+
+@media(max-width: 1440px) {
+    .testimonials {
+        margin-bottom: 7.5rem;
+    }
+
+    .testimonials__information {
+        margin-bottom: 5rem;
+    }
+
+    .testimonials__info {
+        max-width: 831px;
+    }
+
+    .tabs {
+        max-width: 300px;
+        padding: 0.75rem;
+    }
+
+    .tab {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .tab__active {
+        padding: 0.7rem 1.2rem;
+    }
+
+    .slide_img {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    .slide_text {
+        margin-bottom: 2.5rem;
+    }
 }

@@ -28,21 +28,21 @@ const Cases = () => {
                     <div className={s.for__individual_cards}>
                         <ul className={classNames(s.for__individual_list, s.for__individual_list__first)}>
                             <li className={s.for__individual_item}>
-                                <PiHandCoinsBold size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <PiHandCoinsBold color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Managing Personal Finances</p>
                             </li>
                             <li className={s.for__individual_item}>
-                                <MdOutlineSavings size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <MdOutlineSavings color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Saving for the Future</p>
                             </li>
                         </ul>
                         <ul className={s.for__individual_list}>
                             <li className={s.for__individual_item}>
-                                <BsBank size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <BsBank color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Homeowner-ship</p>
                             </li>
                             <li className={s.for__individual_item}>
-                                <FaBookOpen size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <FaBookOpen color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Education Funding</p>
                             </li>
                         </ul>
@@ -100,21 +100,21 @@ const Cases = () => {
                     <div className={classNames(s.for__individual_cards, s.business)}>
                         <ul className={classNames(s.for__individual_list, s.for__individual_list__first)}>
                             <li className={s.for__individual_item}>
-                                <LiaCitySolid size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <LiaCitySolid color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Startups and Entrepreneurs</p>
                             </li>
                             <li className={s.for__individual_item}>
-                                <IoIosCash size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <IoIosCash color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Cash Flow Management</p>
                             </li>
                         </ul>
                         <ul className={s.for__individual_list}>
                             <li className={s.for__individual_item}>
-                                <BsFileBarGraphFill size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <BsFileBarGraphFill color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Business Expansion</p>
                             </li>
                             <li className={s.for__individual_item}>
-                                <AiOutlineDollar size={"3rem"} color={"#CAFF33"} className={s.item__img}/>
+                                <AiOutlineDollar color={"#CAFF33"} className={s.item__img}/>
                                 <p className={s.item__text}>Payment Solutions</p>
                             </li>
                         </ul>

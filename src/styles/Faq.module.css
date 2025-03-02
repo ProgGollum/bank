@@ -21,7 +21,7 @@
     display: inline-block;
 
     content: "";
-    width: 1595px;
+    width: 100%;
     height: 275px;
 
     position: absolute;
@@ -58,4 +58,32 @@
     align-items: center;
     column-gap: 4px;
     margin: 25px auto 0;
+}
+
+
+
+@media(max-width: 1440px) {
+    .question {
+        margin-bottom: 7.5rem;
+    }
+
+    .question__info {
+        margin-bottom: 3.75rem;
+    }
+
+    .question__list {
+        gap: 1.25rem;
+    }
+
+    .question__list_item {
+        max-width: 630px;
+        padding: 2.5rem;
+        border-radius: 0.7rem;
+    }
+
+    .item__title {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }

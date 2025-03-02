@@ -12,11 +12,13 @@ export default function () {
         <main>
             <Welcome/>
             <Product/>
-            <Cases/>
-            <Features/>
-            <Faq/>
-            <Testimonials/>
-            <Banner/>
+            {/*<Cases/>*/}
+            {/*<Features/>*/}
+            {/*<Faq/>*/}
+            {/*height bag fix pls*/}
+            {/*<Testimonials/>*/}
+            {/*swiper bag with tabs fix pls*/}
+            {/*<Banner/>*/}
         </main>
     )
 }

@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
-import {Itransaction} from "@/types/types";
+import {ITransaction} from "@/types/types";
 import Image from "next/image";
 import trans from "../../images/transaction.svg"
 import s from "../../styles/Transactions.module.css"
 
 
 interface TransactionsProps {
-    transactions: Itransaction[];
+    transactions: ITransaction[];
 }
 
 const Transactions: FC<TransactionsProps> = ({transactions}) => {

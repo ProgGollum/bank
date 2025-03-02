@@ -15,7 +15,6 @@
 .for__individual_cards {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
 
     max-width: 748px;
     padding: 50px;
@@ -59,6 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     background-color: #1A1A1A;
@@ -69,6 +69,7 @@
 
 .item__img {
     margin-bottom: 24px;
+    font-size: 3rem;
 }
 
 .item__text {
@@ -166,4 +167,100 @@
     right: 0;
     z-index: -1;
     flex-grow: 0;
+}
+
+
+
+@media(max-width: 1440px) {
+    .cases__info {
+        margin-bottom: 3.75rem;
+    }
+
+    .cases__for_individual {
+        margin-bottom: 2.5rem;
+        column-gap: 3.75rem;
+    }
+
+    .for__individual_cards {
+        max-width: 38.125rem;
+        padding: 2.5rem;
+    }
+
+    .for__individual_cards::after {
+        width: 224px;
+        height: 213px;
+    }
+
+    .for__individual_list {
+        column-gap: 0.625rem;
+    }
+
+    .for__individual_list__first {
+        margin-bottom: 0.625rem;
+    }
+
+    .for__individual_item {
+        width: 260px;
+        height: 174px;
+        padding: 1.5rem;
+    }
+
+    .item__img {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .item__text {
+        font-size: 1rem;
+    }
+
+
+
+    .for__individual_general {
+        max-width: 610px;
+    }
+
+    .general__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .general__text {
+        margin-bottom: 3rem;
+    }
+
+    .general__percents {
+        margin-bottom: 5rem;
+    }
+
+    .general__percent {
+        width: 135px;
+    }
+
+    .general__percent_center {
+        width: 236px;
+    }
+
+    .percent__value {
+        margin-bottom: 0.3rem;
+        font-size: 2.5rem;
+    }
+
+    .percent__text {
+        font-size: 0.9rem;
+    }
+
+    .general__button {
+        padding: 0.8rem 1.25rem;
+    }
+
+    .cases__for_business {
+        column-gap: 3.75rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .for__individual_cards {
+        max-width: 38.125rem;
+        padding: 2.5rem;
+    }
 }

@@ -3,6 +3,8 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
+import {createTheme, MantineProvider} from "@mantine/core";
+import {black} from "next/dist/lib/picocolors";
 
 export const metadata = {
     title: 'Next.js',
@@ -17,9 +19,11 @@ export default function RootLayout({
     return (
         <html lang="en">
           <body>
-            <Header/>
-            {children}
-            <Footer/>
+            <MantineProvider defaultColorScheme="dark">
+                <Header/>
+                {children}
+                <Footer/>
+            </MantineProvider>
           </body>
         </html>
     )
