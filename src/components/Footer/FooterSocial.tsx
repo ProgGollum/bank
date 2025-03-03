@@ -14,17 +14,17 @@ const FooterSocial = () => {
                     <ul className={s.socialIcons}>
                         <li>
                             <Link href={"#!"}>
-                                <Image src={facebook} alt={""}/>
+                                <Image className={s.img} src={facebook} alt={""}/>
                             </Link>
                         </li>
                         <li>
                             <Link href={"#!"}>
-                                <Image src={twitter} alt={""}/>
+                                <Image className={s.img} src={twitter} alt={""}/>
                             </Link>
                         </li>
                         <li>
                             <Link href={"#!"}>
-                                <Image src={In} alt={""}/>
+                                <Image className={s.img} src={In} alt={""}/>
                             </Link>
                         </li>
                     </ul>

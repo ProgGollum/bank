@@ -1,10 +1,10 @@
 .socialInner {
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 16px 50px;
-}
+     border-radius: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 16px 16px 50px;
+ }
 
 .socialIcons {
     display: flex;
@@ -13,5 +13,31 @@
 
 .socialText {
     color: #B3B3B3;
+}
+
+
+@media(max-width: 390px) {
+    .socialInner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 16px 16px 50px;
+    }
+
+    .socialIcons {
+        display: flex;
+        column-gap: 14px;
+        margin-bottom: 2rem;
+    }
+
+    .img {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .socialText {
+        color: #B3B3B3;
+    }
 }
 

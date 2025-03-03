@@ -128,3 +128,47 @@
         font-size: 2rem;
     }
 }
+
+@media(max-width: 390px) {
+    .features {
+        margin-bottom: 5rem;
+    }
+
+    .features__info {
+        max-width: 366px;
+        margin-bottom: 3.125rem;
+    }
+
+    .custom__tabs {
+        flex-direction: column !important;
+    }
+
+    .custom-tabs .mantine-Tabs-tab {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .features__tabulation {
+        gap: 1.25rem;
+        margin: 0 auto 1.25rem;
+    }
+
+
+
+    .features__card {
+        max-width: 366px;
+        padding: 1.875rem;
+    }
+
+    .features__card_name {
+        margin-bottom: 1.25rem;
+    }
+
+    .features__card_title {
+        font-size: 1.125rem;
+    }
+
+    .features__card_icon {
+        font-size: 2rem;
+    }
+}

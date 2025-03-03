@@ -26,3 +26,27 @@
     align-items: center;
     column-gap: 5px;
 }
+
+
+@media(max-width: 390px) {
+    .contacts {
+        margin-bottom: 1.875rem;
+    }
+
+    .contactsInner {
+        padding: 1.875rem 0;
+        gap: 1.25rem;
+    }
+
+    .contactsList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .constactsItem {
+        column-gap: 6px;
+    }
+}

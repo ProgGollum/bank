@@ -38,12 +38,13 @@ const Testimonials = () => {
                     </div>
                 </div>
                 <Carousel
-                    height={"300px"}
-                    slideSize="33.333333%"
+                    height={"273px"}
+                    slideSize="100%"
                     slideGap="md"
-                    loop
                     align="start"
-                    slidesToScroll={3}
+                    loop={true}
+                    withControls={false}
+                    slidesToScroll={1}
                     className={classNames(s.carousel, tab === "individual" ? s.carousel__active : {})}
                 >
                     <Carousel.Slide className={s.slide}>
@@ -96,12 +97,13 @@ const Testimonials = () => {
 
                 </Carousel>
                 <Carousel
-                    height={"300px"}
-                    slideSize="33.333333%"
+                    height={"273px"}
+                    slideSize="100%"
                     slideGap="md"
                     loop
                     align="start"
-                    slidesToScroll={3}
+                    withControls={false}
+                    slidesToScroll={1}
                     className={classNames(s.carousel, tab === "business" ? s.carousel__active : {})}
                 >
                     <Carousel.Slide className={s.slide}>

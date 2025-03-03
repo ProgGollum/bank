@@ -5,6 +5,7 @@ import {Tabs} from '@mantine/core';
 import s from "../../../styles/Features.module.css"
 import classNames from "classnames";
 import {MdArrowOutward} from "react-icons/md";
+import { Carousel } from '@mantine/carousel';
 
 const Features: FC = () => {
     const [activeTab, setActiveTab] = useState<string | null>('first');
@@ -18,7 +19,7 @@ const Features: FC = () => {
                     transactions, and
                     personalized financial insights, all designed to enhance your banking experience
                 </p>
-                <Tabs variant="pills" radius="lg" orientation="vertical" value={activeTab} onChange={setActiveTab}>
+                <Tabs className={s.custom__tabs} variant="pills" radius="lg" orientation="vertical" value={activeTab} onChange={setActiveTab}>
                     <Tabs.List className={s.features__tabulation}>
                         <Tabs.Tab value="first"
                                   className={classNames(s.features__tabulation_button, activeTab === "first" ? s.button__active : {})}>Online

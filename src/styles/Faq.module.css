@@ -87,3 +87,23 @@
         margin-bottom: 1.5rem;
     }
 }
+
+@media(max-width: 390px) {
+    .question {
+        margin-bottom: 5rem;
+    }
+
+    .question__info {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .question__list_item {
+        max-width: 356px;
+        padding: 1.875rem;
+    }
+
+    .item__title {
+        font-size: 1.125rem;
+    }
+}

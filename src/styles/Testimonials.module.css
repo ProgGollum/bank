@@ -104,3 +104,29 @@
         margin-bottom: 2.5rem;
     }
 }
+
+@media(max-width: 390px) {
+    .testimonials {
+        margin-bottom: 5rem;
+    }
+
+    .testimonials__information {
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .testimonials__info {
+        max-width: 358px;
+        text-align: center;
+    }
+
+    .slide_img {
+        margin-bottom: 1.875rem;
+        font-size: 2rem;
+    }
+
+    .slide_text {
+        margin-bottom: 1.875rem;
+    }
+}

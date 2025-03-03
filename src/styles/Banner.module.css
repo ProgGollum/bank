@@ -67,3 +67,29 @@
         padding: 0.8rem 1.25rem;
     }
 }
+
+@media(max-width: 390px) {
+    .banner {
+        margin-bottom: 5rem;
+    }
+
+    .banner__inner {
+        padding: 1.875rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .banner__inner::after {
+        width: 152px;
+        height: 143px;
+    }
+
+    .banner__text {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .banner__button {
+        padding: 0.875rem 1.5rem;
+    }
+}
