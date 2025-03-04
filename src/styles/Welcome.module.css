@@ -7,6 +7,9 @@
 /* Welcome__gen */
 .welcomeGen {
     max-width: 826px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .genChecked {
@@ -141,7 +144,6 @@
     }
 
     .genButton {
-        max-width: 144px;
         padding: 14px 24px;
     }
 
@@ -173,6 +175,107 @@
     .profit {
         column-gap: 7px;
         padding: 11px 14px;
+    }
+
+    .profit__value {
+        font-size: 13px;
+    }
+
+    .profit__text {
+        font-size: 11px;
+    }
+
+    .profit__img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width: 1151px) {
+    .welcomeInner {
+        column-gap: 90px;
+    }
+
+    .welcomeGen {
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 910px) {
+    .welcomeInner {
+        gap: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .genChecked {
+        margin: 0 auto;
+    }
+
+    .genButton {
+        display: block;
+        margin: 0 auto;
+
+    }
+}
+
+@media(max-width: 477px) {
+    .welcomeInner {
+        padding-top: 0;
+    }
+
+    .welcomeGen {
+        max-width: 26rem;
+    }
+
+    .genChecked {
+        font-size: 0.875rem;
+        margin: 0 auto 0.75rem;
+    }
+
+    .genText {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .genButton {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
+
+    /* Welcome__finance */
+    .welcomeFinance {
+        max-width: 26rem;
+        margin: 0 auto;
+    }
+
+    .welcomeFinance::after {
+        width: 220px;
+        height: 200px;
+
+        top: -60px;
+        right: -50px;
+    }
+
+    .financeGroup {
+        padding: 1.25rem;
+    }
+
+
+    .finance__exchangeTitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .profit {
+        column-gap: 5px;
+        padding: 8px 10px;
+        left: -36px;
     }
 
     .profit__value {

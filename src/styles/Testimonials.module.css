@@ -40,20 +40,12 @@
     font-weight: 400;
 }
 
-.carousel {
-    display: none;
-}
-
-.carousel__active {
-    display: block;
-}
-
-.slide {
+.swiper_slide {
     text-align: center;
     align-items: center;
 }
 
-.slide p:last-child {
+.swiper_slide p:last-child {
     color: #CAFF33;
 }
 

@@ -151,6 +151,14 @@
     .features__tabulation {
         gap: 1.25rem;
         margin: 0 auto 1.25rem;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: auto;
+        align-items: center;
+        height: auto;
+        max-width: 366px;
     }
 
 

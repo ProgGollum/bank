@@ -3,8 +3,10 @@
 import React, {useState} from 'react';
 import s from "../../../styles/Testimonials.module.css"
 import classNames from "classnames";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import {Carousel} from '@mantine/carousel';
+import { FreeMode, Autoplay} from 'swiper/modules';
+
 import {ImQuotesLeft} from "react-icons/im";
 
 
@@ -37,114 +39,130 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>
-                <Carousel
-                    height={"273px"}
-                    slideSize="100%"
-                    slideGap="md"
-                    align="start"
-                    loop={true}
-                    withControls={false}
-                    slidesToScroll={1}
-                    className={classNames(s.carousel, tab === "individual" ? s.carousel__active : {})}
-                >
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            YourBank has been my trusted financial partner for years. Their personalized service and
-                            innovative digital
-                            banking solutions have made managing my finances a breeze.
-                        </p>
-                        <p>Sara T</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I recently started my own business, and YourBank has been instrumental in helping me set up
-                            my business accounts and
-                            secure the financing I needed. Their expert guidance and tailored solutions have been
-                            invaluable.
-                        </p>
-                        <p>John D</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my
-                            finances and make
-                            transactions on the go. The app is user-friendly and secure, giving me peace of mind.
-                        </p>
-                        <p>Emily G</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            YourBank has been my trusted financial partner for years. Their personalized service and
-                            innovative digital
-                            banking solutions have made managing my finances a breeze.
-                        </p>
-                        <p>Sara T</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I recently started my own business, and YourBank has been instrumental in helping me set up
-                            my business accounts and
-                            secure the financing I needed. Their expert guidance and tailored solutions have been
-                            invaluable.
-                        </p>
-                        <p>John D</p>
-                    </Carousel.Slide>
 
-                </Carousel>
-                <Carousel
-                    height={"273px"}
-                    slideSize="100%"
-                    slideGap="md"
-                    loop
-                    align="start"
-                    withControls={false}
-                    slidesToScroll={1}
-                    className={classNames(s.carousel, tab === "business" ? s.carousel__active : {})}
-                >
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I recently started my own business, and YourBank has been instrumental in helping me set up
-                            my business accounts and
-                            secure the financing I needed. Their expert guidance and tailored solutions have been
-                            invaluable.
-                        </p>
-                        <p>John D</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my
-                            finances and make
-                            transactions on the go. The app is user-friendly and secure, giving me peace of mind.
-                        </p>
-                        <p>Emily G</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            YourBank has been my trusted financial partner for years. Their personalized service and
-                            innovative digital
-                            banking solutions have made managing my finances a breeze.
-                        </p>
-                        <p>Sara T</p>
-                    </Carousel.Slide>
-                    <Carousel.Slide className={s.slide}>
-                        <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
-                        <p className={s.slide_text}>
-                            I recently started my own business, and YourBank has been instrumental in helping me set up
-                            my business accounts and
-                            secure the financing I needed. Their expert guidance and tailored solutions have been
-                            invaluable.
-                        </p>
-                        <p>John D</p>
-                    </Carousel.Slide>
-                </Carousel>
+                {tab === "individual" ? (
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        freeMode={false}
+                        loop={true}
+                        autoplay={{
+                            delay: 1500,
+                            disableOnInteraction: false
+                        }}
+                        modules={[FreeMode, Autoplay]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                YourBank has been my trusted financial partner for years. Their personalized service and
+                                innovative digital
+                                banking solutions have made managing my finances a breeze.
+                            </p>
+                            <p>Sara T</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I recently started my own business, and YourBank has been instrumental in helping me set up
+                                my business accounts and
+                                secure the financing I needed. Their expert guidance and tailored solutions have been
+                                invaluable.
+                            </p>
+                            <p>John D</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                YourBank has been my trusted financial partner for years. Their personalized service and
+                                innovative digital
+                                banking solutions have made managing my finances a breeze.
+                            </p>
+                            <p>Sara T</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my
+                                finances and make
+                                transactions on the go. The app is user-friendly and secure, giving me peace of mind.
+                            </p>
+                            <p>Emily G</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                YourBank has been my trusted financial partner for years. Their personalized service and
+                                innovative digital
+                                banking solutions have made managing my finances a breeze.
+                            </p>
+                            <p>Sara T</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I recently started my own business, and YourBank has been instrumental in helping me set up
+                                my business accounts and
+                                secure the financing I needed. Their expert guidance and tailored solutions have been
+                                invaluable.
+                            </p>
+                            <p>John D</p>
+                        </SwiperSlide>
+                    </Swiper>
+                ) : (
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        freeMode={false}
+                        loop={true}
+                        autoplay={{
+                            delay: 1500,
+                            disableOnInteraction: false
+                        }}
+                        modules={[FreeMode, Autoplay]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I recently started my own business, and YourBank has been instrumental in helping me set up
+                                my business accounts and
+                                secure the financing I needed. Their expert guidance and tailored solutions have been
+                                invaluable.
+                            </p>
+                            <p>John D</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my
+                                finances and make
+                                transactions on the go. The app is user-friendly and secure, giving me peace of mind.
+                            </p>
+                            <p>Emily G</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                YourBank has been my trusted financial partner for years. Their personalized service and
+                                innovative digital
+                                banking solutions have made managing my finances a breeze.
+                            </p>
+                            <p>Sara T</p>
+                        </SwiperSlide>
+                        <SwiperSlide className={s.swiper_slide}>
+                            <ImQuotesLeft color={"#CAFF33"} className={s.slide_img}/>
+                            <p className={s.slide_text}>
+                                I recently started my own business, and YourBank has been instrumental in helping me set up
+                                my business accounts and
+                                secure the financing I needed. Their expert guidance and tailored solutions have been
+                                invaluable.
+                            </p>
+                            <p>John D</p>
+                        </SwiperSlide>
+                    </Swiper>
+                )}
             </div>
         </section>
     );

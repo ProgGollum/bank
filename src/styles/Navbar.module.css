@@ -19,6 +19,12 @@
     }
 }
 
+@media(max-width: 670px) {
+    .navBar {
+        display: none;
+    }
+}
+
 @media(max-width: 390px) {
     .navBar {
         display: none;
