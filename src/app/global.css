@@ -245,6 +245,12 @@ a {
     }
 }
 
+@media (max-width: 1126px) {
+    .sectionTitle {
+        text-align: center;
+    }
+}
+
 @media(max-width: 910px) {
     .sectionTitle {
         text-align: center;

@@ -13,7 +13,7 @@ export default function () {
             <Welcome/>
             <Product/>
             <Cases/>
-            {/*<Features/>*/}
+            <Features/>
             {/*<Faq/>*/}
             {/*/!*height bag fix pls*!/*/}
             {/*<Testimonials/>*/}

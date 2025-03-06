@@ -169,6 +169,30 @@
     flex-grow: 0;
 }
 
+@media (max-width: 1616px) {
+    .cases__for_individual {
+        justify-content: space-around;
+    }
+
+    .for__individual_cards {
+        max-width: 550px;
+    }
+
+    .for__individual_item {
+        width: 215px;
+        height: auto;
+        padding: 24px;
+    }
+
+    .for__individual_general {
+        max-width: 550px;
+    }
+
+    .cases__for_business {
+        justify-content: space-around;
+    }
+}
+
 
 
 @media(max-width: 1440px) {
@@ -252,6 +276,243 @@
 
     .general__button {
         padding: 0.8rem 1.25rem;
+    }
+
+    .cases__for_business {
+        column-gap: 3.75rem;
+        margin-bottom: 7.5rem;
+    }
+}
+
+@media(max-width: 1306px) {
+    .for__individual_cards {
+        max-width: 30rem;
+        padding: 2rem;
+    }
+
+    .for__individual_item {
+        width: 203px;
+        padding: 1.5rem;
+    }
+
+
+
+    .for__individual_general {
+        max-width: 556px;
+    }
+
+    .general__title {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 1126px) {
+    .cases__info {
+        text-align: center;
+    }
+
+    .cases__for_individual {
+        margin-bottom: 2.5rem;
+        gap: 3.75rem;
+        flex-direction: column;
+    }
+
+    .for__individual_cards {
+        max-width: 50rem;
+        padding: 3rem;
+    }
+
+    .for__individual_item {
+        width: 347px;
+        padding: 2rem;
+    }
+
+
+
+    .for__individual_general {
+        max-width: 50rem;
+    }
+
+    .general__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .general__text {
+        margin-bottom: 3rem;
+    }
+
+    .general__percents {
+        margin-bottom: 3rem;
+        justify-content: space-around;
+    }
+
+    .general__percent {
+        width: 135px;
+    }
+
+    .general__percent_center {
+        width: 236px;
+    }
+
+    .percent__value {
+        margin-bottom: 0.3rem;
+        font-size: 2.5rem;
+    }
+
+    .percent__text {
+        font-size: 0.9rem;
+    }
+
+    .general__button {
+        padding: 0.7rem 1.125rem;
+    }
+
+    .item__img {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .cases__for_business {
+        gap: 3.75rem;
+        margin-bottom: 7.5rem;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 836px) {
+    .for__individual_cards {
+        max-width: 30rem;
+        padding: 2.5rem;
+    }
+
+    .for__individual_cards::after {
+        width: 224px;
+        height: 213px;
+    }
+
+    .for__individual_list {
+        column-gap: 0.65rem;
+    }
+
+    .for__individual_list__first {
+        margin-bottom: 0.65rem;
+    }
+
+    .for__individual_item {
+        width: 195px;
+        height: 174px;
+        padding: 1.25rem;
+    }
+
+    .item__text {
+        font-size: 0.875rem;
+    }
+
+
+
+    .for__individual_general {
+        max-width: 610px;
+    }
+
+    .general__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+        text-align: center;
+    }
+
+    .general__text {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .general__percents {
+        margin-bottom: 5rem;
+    }
+
+    .general__percent {
+        width: 135px;
+    }
+
+    .general__percent_center {
+        width: 236px;
+    }
+
+    .percent__value {
+        margin-bottom: 0.3rem;
+        font-size: 2.5rem;
+    }
+
+    .percent__text {
+        font-size: 0.9rem;
+    }
+
+    .general__button {
+        padding: 0.8rem 1.25rem;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        max-width: 130px;
+    }
+
+    .cases__for_business {
+        column-gap: 3.75rem;
+        margin-bottom: 7.5rem;
+    }
+}
+
+@media(max-width: 610px) {
+    .for__individual_cards {
+        max-width: 25rem;
+    }
+
+    .for__individual_item {
+        max-width: 155px;
+    }
+
+    .for__individual_general {
+        max-width: 450px;
+    }
+
+    .general__title {
+        font-size: 1.5rem;
+    }
+
+    .general__percents {
+        flex-direction: column;
+        row-gap: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .general__percent {
+        width: 258px;
+        text-align: center;
+    }
+
+    .general__percent_center {
+        width: 258px;
+        padding: 30px 0;
+        border-right: 0;
+        border-left: 0;
+        border-top: 1px #262626 dashed;
+        border-bottom: 1px #262626 dashed;
+    }
+
+    .percent__value {
+        margin-bottom: 0.3rem;
+        font-size: 2.875rem;
+    }
+
+    .percent__text {
+        font-size: 1rem;
+    }
+
+    .general__button {
+        padding: 0.8rem 1.25rem;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        max-width: 130px;
     }
 
     .cases__for_business {
