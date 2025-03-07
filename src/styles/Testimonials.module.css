@@ -103,6 +103,13 @@
     }
 }
 
+@media (max-width: 970px) {
+    .testimonials__information {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
 @media(max-width: 390px) {
     .testimonials {
         margin-bottom: 5rem;

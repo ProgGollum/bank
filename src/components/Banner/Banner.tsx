@@ -7,7 +7,7 @@ const Banner = () => {
         <section className={s.banner}>
             <div className="container">
                 <div className={s.banner__inner}>
-                    <div>
+                    <div className={s.banner__content}>
                         <h2 className="sectionTitle">Start your financial journey with <span>YourBank today!</span></h2>
                         <p className={s.banner__text}>
                             Ready to take control of your finances? Join YourBank now, and let us help

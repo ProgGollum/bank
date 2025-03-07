@@ -18,7 +18,7 @@ export default function () {
             {/*/!*height bag fix pls*!/*/}
             <Testimonials/>
             {/*/!*swiper bag with tabs fix pls*!/*/}
-            {/*<Banner/>*/}
+            <Banner/>
         </main>
     )
 }
