@@ -100,7 +100,7 @@ legend {
 /*Global styles*/
 
 body {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Lexend', sans-serif !important;
     font-size: 18px;
     font-weight: 300;
     background: rgb(26, 26, 26) !important;

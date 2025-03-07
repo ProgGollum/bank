@@ -1,3 +1,4 @@
+
 'use client'
 
 import {FC, useState} from 'react';
@@ -147,5 +148,4 @@ const Features: FC = () => {
         </section>
     );
 }
-
 export default Features;
