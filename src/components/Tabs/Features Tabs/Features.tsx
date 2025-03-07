@@ -5,7 +5,6 @@ import {Tabs} from '@mantine/core';
 import s from "../../../styles/Features.module.css"
 import classNames from "classnames";
 import {MdArrowOutward} from "react-icons/md";
-import { Carousel } from '@mantine/carousel';
 
 const Features: FC = () => {
     const [activeTab, setActiveTab] = useState<string | null>('first');
