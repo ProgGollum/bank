@@ -16,7 +16,7 @@ export default function () {
             <Features/>
             {/*<Faq/>*/}
             {/*/!*height bag fix pls*!/*/}
-            {/*<Testimonials/>*/}
+            <Testimonials/>
             {/*/!*swiper bag with tabs fix pls*!/*/}
             {/*<Banner/>*/}
         </main>

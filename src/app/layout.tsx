@@ -2,7 +2,6 @@ import "./global.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
 import {createTheme, MantineProvider} from "@mantine/core";
 import {black} from "next/dist/lib/picocolors";
 

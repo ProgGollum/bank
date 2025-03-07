@@ -97,6 +97,12 @@
     }
 }
 
+@media (max-width: 1130px) {
+    .testimonials__info {
+        max-width: 650px;
+    }
+}
+
 @media(max-width: 390px) {
     .testimonials {
         margin-bottom: 5rem;

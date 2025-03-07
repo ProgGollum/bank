@@ -42,14 +42,24 @@ const Testimonials = () => {
 
                 {tab === "individual" ? (
                     <Swiper
-                        slidesPerView={1}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1
+                            },
+                            768: {
+                                slidesPerView: 2
+                            },
+                            1440: {
+                                slidesPerView: 3
+                            }
+                        }}
                         spaceBetween={30}
                         freeMode={false}
                         loop={true}
-                        autoplay={{
-                            delay: 1500,
-                            disableOnInteraction: false
-                        }}
+                        // autoplay={{
+                        //     delay: 1500,
+                        //     disableOnInteraction: false
+                        // }}
                         modules={[FreeMode, Autoplay]}
                         className="mySwiper"
                     >
@@ -112,14 +122,24 @@ const Testimonials = () => {
                     </Swiper>
                 ) : (
                     <Swiper
-                        slidesPerView={1}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1
+                            },
+                            768: {
+                                slidesPerView: 2
+                            },
+                            1440: {
+                                slidesPerView: 3
+                            }
+                        }}
                         spaceBetween={30}
                         freeMode={false}
                         loop={true}
-                        autoplay={{
-                            delay: 1500,
-                            disableOnInteraction: false
-                        }}
+                        // autoplay={{
+                        //     delay: 1500,
+                        //     disableOnInteraction: false
+                        // }}
                         modules={[FreeMode, Autoplay]}
                         className="mySwiper"
                     >
