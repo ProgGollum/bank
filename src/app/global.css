@@ -101,7 +101,7 @@ legend {
 
 body {
     font-family: 'Lexend', sans-serif !important;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 300;
     background: rgb(26, 26, 26) !important;
     color: #fff !important;
@@ -257,15 +257,25 @@ a {
     }
 }
 
-@media (max-width: 1126px) {
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container {
+        max-width: 990px;
+    }
+
     .sectionTitle {
         text-align: center;
     }
 }
 
-@media(max-width: 910px) {
-    .sectionTitle {
-        text-align: center;
+@media(max-width: 960px) {
+    .container {
+        max-width: 830px;
     }
 }
 
@@ -313,14 +323,28 @@ a {
     }
 }
 
-@media(max-width: 476px) {
+@media (max-width: 640px) {
+    .container {
+        max-width: 510px;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 480px) {
     body {
         font-size: 1rem !important;
     }
 
     body::after {
-        width: 476px;
-        height: 346px;
+        width: 0;
+        height: 0;
+    }
+
+    .container {
+        max-width: 388px;
     }
 
     .sectionTitle {

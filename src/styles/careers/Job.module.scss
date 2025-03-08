@@ -1,0 +1,105 @@
+//Variables
+$text-color: #B3B3B3;
+$text-color-dark: #1C1C1C;
+$bg-color: #1C1C1C;
+$bg-color-dark: #1A1A1A;
+$accent-color: #CAFF33;
+
+.job {
+  margin-bottom: 10rem;
+
+  &__info {
+    max-width: 1296px;
+    margin-bottom: 5rem;
+    color: $text-color;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+
+  &__item {
+    max-width: 783px;
+    padding: 3.125rem 3.125rem 0 3.125rem;
+    background-color: $bg-color;
+    border-radius: 1rem;
+
+    &_button {
+      margin-bottom: 3.125rem;
+      padding: 1rem 1.875rem;
+
+      background-color: $accent-color;
+      border-radius: 82px;
+
+      font-size: 18px;
+      font-weight: 500;
+      color: $text-color-dark;
+    }
+
+    .relationships {
+      margin-bottom: 3.125rem;
+
+      &__title {
+        margin-bottom: 0.875rem;
+        font-size: 1.875rem;
+        font-weight: 600;
+      }
+
+      &__texts {
+        display: flex;
+        column-gap: 0.625rem;
+
+        p {
+          padding: 0.5rem 1rem;
+          background-color: $bg-color-dark;
+          border-radius: 4.25rem;
+          color: $text-color;
+        }
+      }
+    }
+
+    .about__job {
+      margin-bottom: 2.5rem;
+
+      &_title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+      }
+
+      &_text {
+        color: $text-color;
+      }
+    }
+
+    .requirements {
+      margin-bottom: 3.125rem;
+
+      &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: flex-start;
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 0.625rem;
+
+        p {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

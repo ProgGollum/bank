@@ -1,0 +1,204 @@
+//Variables
+$bg-color-main: #1C1C1C;
+$bg-color: #1A1A1A;
+$accent-color: #CAFF33;
+$text-color: #B3B3B3;
+
+.welcome {
+  margin-bottom: 10rem;
+
+  &__inner {
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $bg-color-main;
+
+    position: relative;
+
+    &_bg {
+      z-index: 2;
+      border-radius: 1rem;
+
+      @media (max-width: 1440px) {
+        max-width: 715px;
+      }
+
+      @media (max-width: 1200px) {
+        max-width: 665px;
+      }
+
+      @media(max-width: 1000px) {
+        max-width: 700px;
+      }
+
+      @media (max-width: 800px) {
+        max-width: 600px;
+      }
+
+      @media (max-width: 640px) {
+        max-width: 425px;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: 1440px) {
+      padding: 2.5rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 2.25rem;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 2rem;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    @media (max-width: 800px) {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 640px) {
+      max-width: 480px;
+      padding: 1.75rem;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 350px;
+      padding: 0.875rem;
+    }
+  }
+
+  &__inner:after {
+    display: inline-block;
+    content: "";
+    width: 31rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-image: url(../../images/careers/abstract.svg);
+
+    @media (max-width: 1200px) {
+      width: 25rem;
+      height: 25rem;
+      right: 0;
+    }
+
+    @media (max-width: 1000px) {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @media (max-width: 800px) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+  &__gen {
+    max-width: 791px;
+    margin-right: -210px;
+    padding: 5rem;
+    background-color: $bg-color;
+    border-radius: 1.25rem 0 5rem 1.25rem;
+    z-index: 3;
+
+    &_title {
+      margin-bottom: 1.5rem;
+
+      font-size: 3rem;
+      font-weight: 500;
+
+      span {
+        color: $accent-color;
+      }
+
+      @media (max-width: 1584px) {
+        font-size: 2.875rem;
+      }
+
+      @media (max-width: 1440px) {
+        margin-bottom: 1.25rem;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 800px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 640px) {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+    }
+
+    &_text {
+      color: $text-color;
+
+      @media (max-width: 1584px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 640px) {
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.875rem;
+      }
+    }
+
+
+    @media (max-width: 1584px) {
+      max-width: 700px;
+    }
+
+    @media (max-width: 1440px) {
+      max-width: 658px;
+      padding: 3.75rem;
+    }
+
+    @media (max-width: 1200px) {
+      max-width: 570px;
+      padding: 3.125rem;
+    }
+
+    @media (max-width: 1000px) {
+      max-width: 480px;
+      padding: 2.875rem;
+      margin-right: 0;
+      margin-top: -187px;
+    }
+
+    @media (max-width: 800px) {
+      max-width: 400px;
+      padding: 2.5rem;
+    }
+
+    @media (max-width: 640px) {
+      max-width: 350px;
+      padding: 2.25rem;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: -3.125rem;
+      max-width: 320px;
+      padding: 1.5rem;
+    }
+  }
+}
+
