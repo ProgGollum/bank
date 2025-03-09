@@ -9,12 +9,12 @@ import Banner from "@/components/Banner/Banner";
 const Page = () => {
     return (
         <main>
-            {/*<WelcomeCareers/>*/}
-            {/*<Values/>*/}
+            <WelcomeCareers/>
+            <Values/>
             <Benefits/>
-            {/*<Job/>*/}
+            <Job/>
             {/*<Faq/>*/}
-            {/*<Banner/>*/}
+            <Banner/>
         </main>
     );
 };

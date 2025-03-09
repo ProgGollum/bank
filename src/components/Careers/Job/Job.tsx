@@ -43,24 +43,34 @@ const Job = () => {
                             <h3 className={s.requirements__title}>Requirements & Qualifications</h3>
                             <ul className={s.requirements__list}>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Bachelor's degree in Business, Finance, or a related field</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Minimum of 3 years of experience in sales or relationship management in the
                                         banking industry</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Proven track record of meeting and exceeding sales targets</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Excellent interpersonal and negotiation skills</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Strong knowledge of banking products and services</p>
                                 </li>
                             </ul>
@@ -93,23 +103,33 @@ const Job = () => {
                             <h3 className={s.requirements__title}>Requirements & Qualifications</h3>
                             <ul className={s.requirements__list}>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Bachelor's degree in Finance, Economics, or a related field</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Minimum of 2 years of experience in risk management or a similar role</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Proficiency in risk analysis tools and techniques</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Strong analytical and problem-solving skills</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Knowledge of regulatory requirements and industry best practices</p>
                                 </li>
                             </ul>
@@ -140,27 +160,37 @@ const Job = () => {
                             </p>
                         </div>
                         <div className={s.requirements}>
-                            <h3 className={s.requirements__title}></h3>
+                            <h3 className={s.requirements__title}>Requirements & Qualifications</h3>
                             <ul className={s.requirements__list}>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Bachelor's degree in Computer Science, Information Security, or a related
                                         field</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Minimum of 5 years of experience in IT security or a similar role</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>In-depth knowledge of network security protocols and technologies</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Familiarity with regulatory frameworks such as PCI DSS and GDPR</p>
                                 </li>
                                 <li className={s.requirements__item}>
-                                    <SlBriefcase size="1.5rem"/>
+                                    <div className={s.requirements__item_img}>
+                                        <SlBriefcase/>
+                                    </div>
                                     <p>Professional certifications such as CISSP or CISM are preferred</p>
                                 </li>
                             </ul>

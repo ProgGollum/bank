@@ -8,17 +8,46 @@ $accent-color: #CAFF33;
 .job {
   margin-bottom: 10rem;
 
+  @media (max-width: 1440px) {
+    margin-bottom: 7.5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 5rem;
+  }
+
   &__info {
     max-width: 1296px;
     margin-bottom: 5rem;
     color: $text-color;
+
+    @media (max-width: 1440px) {
+      margin-bottom: 3.75rem;
+    }
+
+    @media (max-width: 1120px) {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
-    margin-bottom: 1.875rem;
+
+    @media (max-width: 1440px) {
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -26,6 +55,26 @@ $accent-color: #CAFF33;
     padding: 3.125rem 3.125rem 0 3.125rem;
     background-color: $bg-color;
     border-radius: 1rem;
+
+    @media (max-width: 1440px) {
+      padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    @media (max-width: 1120px) {
+      padding: 2.25rem 2.25rem 0 2.25rem;
+    }
+
+    @media (max-width: 800px) {
+      padding: 3.125rem 3.125rem 0 3.125rem;
+    }
+
+    @media (max-width: 640px) {
+      padding: 2rem 2rem 0 2rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 1.5rem 1.5rem 0 1.5rem;
+    }
 
     &_button {
       margin-bottom: 3.125rem;
@@ -37,26 +86,139 @@ $accent-color: #CAFF33;
       font-size: 18px;
       font-weight: 500;
       color: $text-color-dark;
+
+
+      @media (max-width: 1440px) {
+        margin-bottom: 2.5rem;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 800px) {
+        margin-bottom: 3.125rem;
+        padding: 1rem 1.875rem;
+        font-size: 1.125rem;
+      }
+
+      @media (max-width: 640px) {
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 1.5rem;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+      }
     }
 
     .relationships {
       margin-bottom: 3.125rem;
 
+      @media (max-width: 1440px) {
+        margin-bottom: 2.5rem;
+      }
+
+      @media (max-width: 1120px) {
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        margin-bottom: 3.125rem;
+      }
+
+      @media (max-width: 640px) {
+        margin-bottom: 1.75rem;
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 1.875rem;
+      }
+
       &__title {
         margin-bottom: 0.875rem;
         font-size: 1.875rem;
         font-weight: 600;
+
+        @media (max-width: 1440px) {
+          margin-bottom: 10px;
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 1120px) {
+          margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 800px) {
+          margin-bottom: 0.875rem;
+          font-size: 1.875rem;
+        }
+
+        @media (max-width: 640px) {
+          margin-bottom: 0.75rem;
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+          margin-bottom: 10px;
+          font-size: 1.25rem;
+        }
       }
 
       &__texts {
         display: flex;
         column-gap: 0.625rem;
 
+        @media (max-width: 1440px) {
+          column-gap: 8px;
+        }
+
+        @media (max-width: 1280px) {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        @media (max-width: 800px) {
+          flex-direction: row;
+          gap: 0.625rem;
+        }
+
+        @media (max-width: 640px) {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        @media (max-width: 480px) {
+          gap: 6px;
+        }
+
         p {
+          max-width: fit-content;
           padding: 0.5rem 1rem;
           background-color: $bg-color-dark;
           border-radius: 4.25rem;
           color: $text-color;
+
+          @media (max-width: 1440px) {
+            padding: 6px 14px;
+            font-size: 1rem;
+          }
+
+          @media (max-width: 800px) {
+            padding: 0.5rem 1rem;
+            font-size: 1.125rem;
+          }
+
+          @media (max-width: 640px) {
+            padding: 6px 14px;
+            font-size: 1rem;
+          }
+
+          @media (max-width: 480px) {
+            padding: 6px 10px;
+            font-size: 0.875rem;
+          }
         }
       }
     }
@@ -64,24 +226,124 @@ $accent-color: #CAFF33;
     .about__job {
       margin-bottom: 2.5rem;
 
+      @media (max-width: 1440px) {
+        margin-bottom: 2.5rem;
+      }
+
+      @media (max-width: 1120px) {
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        margin-bottom: 2.5rem;
+      }
+
+      @media (max-width: 640px) {
+        margin-bottom: 1.75rem;
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 1.875rem;
+      }
+
       &_title {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 1.25rem;
+
+        @media (max-width: 1440px) {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+
+        @media (max-width: 1120px) {
+          margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 1.5rem;
+          margin-bottom: 1.25rem;
+        }
+
+        @media (max-width: 640px) {
+          font-size: 1.25rem;
+          margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 640px) {
+          font-size: 1.125rem;
+          margin-bottom: 0.5rem;
+        }
       }
 
       &_text {
         color: $text-color;
+
+        @media (max-width: 800px) {
+          font-size: 1.125rem;
+        }
+
+        @media (max-width: 640px) {
+          font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.875rem;
+        }
       }
     }
 
     .requirements {
       margin-bottom: 3.125rem;
 
+      @media (max-width: 1440px) {
+        margin-bottom: 2.5rem;
+      }
+
+      @media (max-width: 1120px) {
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        margin-bottom: 3.125rem;
+      }
+
+      @media (max-width: 640px) {
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 1.875rem;
+      }
+
       &__title {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 1.25rem;
+
+        @media (max-width: 1440px) {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+
+        @media (max-width: 1120px) {
+          margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 1.5rem;
+          margin-bottom: 1.25rem;
+        }
+
+        @media (max-width: 640px) {
+          font-size: 1.25rem;
+          margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 1.125rem;
+          margin-bottom: 0.5rem;
+        }
       }
 
       &__list {
@@ -89,6 +351,26 @@ $accent-color: #CAFF33;
         flex-direction: column;
         gap: 1.25rem;
         align-items: flex-start;
+
+        @media (max-width: 1440px) {
+          gap: 0.875rem;
+        }
+
+        @media (max-width: 1120px) {
+          gap: 0.75rem;
+        }
+
+        @media (max-width: 800px) {
+          gap: 1.25rem;
+        }
+
+        @media (max-width: 640px) {
+          gap: 0.5rem;
+        }
+
+        @media (max-width: 480px) {
+          gap: 0.875rem;
+        }
       }
 
       &__item {
@@ -96,8 +378,48 @@ $accent-color: #CAFF33;
         align-items: center;
         column-gap: 0.625rem;
 
+        @media (max-width: 1440px) {
+          column-gap: 0.5rem;
+        }
+
+        @media (max-width: 800px) {
+          column-gap: 0.625rem;
+        }
+
+        @media (max-width: 640px) {
+          column-gap: 0.5rem;
+        }
+
+        &_img {
+          font-size: 1.5rem;
+
+          @media (max-width: 1280px) {
+            font-size: 1.25rem;
+          }
+
+          @media (max-width: 800px) {
+            font-size: 1.5rem;
+          }
+
+          @media (max-width: 640px) {
+            font-size: 1.25rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 1.125rem;
+          }
+        }
+
         p {
           color: $text-color;
+
+          @media (max-width: 800px) {
+            font-size: 1.125rem;
+          }
+
+          @media (max-width: 640px) {
+            font-size: 1rem;
+          }
         }
       }
     }

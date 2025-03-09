@@ -9,6 +9,10 @@ $accent-color: #CAFF33;
     margin-bottom: 7.5rem;
   }
 
+  @media (max-width: 640px) {
+    margin-bottom: 5rem;
+  }
+
   &__info {
     max-width: 1296px;
     margin-bottom: 5rem;
@@ -19,9 +23,13 @@ $accent-color: #CAFF33;
       margin-bottom: 3.75rem;
     }
 
-    @media (max-width: 70rem) {
+    @media (max-width: 1120px) {
       margin: 0 auto 3.5rem;
       text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      margin-bottom: 3.25rem;
     }
   }
 
@@ -34,8 +42,13 @@ $accent-color: #CAFF33;
       gap: 1.875rem;
     }
 
-    @media (max-width: 70rem) {
+    @media (max-width: 1120px) {
       gap: 1.5rem ;
+    }
+
+    @media (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -46,12 +59,20 @@ $accent-color: #CAFF33;
     background: linear-gradient(149.36deg, rgba(202, 255, 51, 0.05) -30.105%, rgba(202, 255, 51, 0) 28.234%);
     border: 1px solid #262626;
 
-    @media (max-width: 90rem) {
+    @media (max-width: 1440px) {
       padding: 2.5rem;
     }
 
-    @media (max-width: 70rem) {
+    @media (max-width: 1120px) {
       padding: 2.25rem;
+    }
+
+    @media (max-width: 640px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 1.75rem;
     }
 
     &_title {
@@ -60,20 +81,29 @@ $accent-color: #CAFF33;
       align-items: center;
       column-gap: 1.25rem;
 
-      @media (max-width: 90rem) {
+      @media (max-width: 1440px) {
         column-gap: 0.8rem;
+      }
+
+      @media (max-width: 640px) {
+        column-gap: 0.7rem;
       }
 
       .item_img {
         font-size: 3rem;
         color: $accent-color;
 
-        @media (max-width: 90rem) {
+
+        @media (max-width: 1440px) {
           font-size: 2.75rem;
         }
 
-        @media (max-width: 70rem) {
+        @media (max-width: 1120px) {
           font-size: 2.25rem;
+        }
+
+        @media (max-width: 640px) {
+          font-size: 2rem;
         }
       }
 
@@ -81,22 +111,29 @@ $accent-color: #CAFF33;
         font-size: 1.5rem;
         font-weight: 400;
 
-        @media (max-width: 90rem) {
+        @media (max-width: 1440px) {
           font-size: 1.25rem;
         }
 
-        @media (max-width: 70rem) {
+        @media (max-width: 1120px) {
           font-size: 1.125rem;
         }
 
+        @media (max-width: 480px) {
+          font-size: 1rem;
+        }
       }
     }
 
     &_text {
       color: #B3B3B3;
 
-      @media (max-width: 90rem) {
+      @media (max-width: 1440px) {
         font-size: 1rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.875rem ;
       }
     }
   }

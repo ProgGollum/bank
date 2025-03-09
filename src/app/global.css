@@ -50,7 +50,6 @@ img {
 }
 
 img, svg {
-    max-width: 100%;
     height: auto;
 }
 
@@ -165,11 +164,6 @@ a {
     border: 1px solid #262626;
 }
 
-.header__logo {
-    width: 156px;
-    height: 40px;
-}
-
 .buttons {
     display: flex;
     align-items: center;
@@ -209,7 +203,7 @@ a {
 
 @media(max-width: 1440px) {
     body {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     body::after {
@@ -234,11 +228,6 @@ a {
 
     .header__inner {
         padding: 14px 24px 14px 24px;
-    }
-
-    .header__logo {
-        width: 116px;
-        height: 30px;
     }
 
     .buttons {
@@ -360,11 +349,6 @@ a {
         padding: 14px 14px 14px 24px;
     }
 
-    .header__logo {
-        width: 101px;
-        height: 26px;
-    }
-
     .buttons {
         column-gap: 20px;
     }
@@ -402,11 +386,6 @@ a {
 
     .header__inner {
         padding: 14px 14px 14px 24px;
-    }
-
-    .header__logo {
-        width: 101px;
-        height: 26px;
     }
 
     .buttons {

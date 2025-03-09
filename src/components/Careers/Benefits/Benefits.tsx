@@ -21,7 +21,9 @@ const Benefits = () => {
                 <ul className={s.benefits__list}>
                     <li className={s.benefits__item}>
                         <div className={s.benefits__item_title}>
-                            <HiOutlinePresentationChartBar className={s.item_img}/>
+                            <div className={s.item_img}>
+                                <HiOutlinePresentationChartBar />
+                            </div>
                             <h3>
                                 Competitive Compensation
                             </h3>
@@ -35,7 +37,9 @@ const Benefits = () => {
                     </li>
                     <li className={s.benefits__item}>
                         <div className={s.benefits__item_title}>
-                            <IoBulbOutline className={s.item_img}/>
+                            <div className={s.item_img}>
+                                <IoBulbOutline />
+                            </div>
                             <h3>
                                 Health and Wellness
                             </h3>
@@ -49,7 +53,9 @@ const Benefits = () => {
                     </li>
                     <li className={s.benefits__item}>
                         <div className={s.benefits__item_title}>
-                            <FaBriefcase className={s.item_img}/>
+                            <div className={s.item_img}>
+                                <FaBriefcase />
+                            </div>
                             <h3>
                                 Retirement Planning
                             </h3>
@@ -62,7 +68,9 @@ const Benefits = () => {
                     </li>
                     <li className={s.benefits__item}>
                         <div className={s.benefits__item_title}>
-                            <BsFillHddNetworkFill className={s.item_img}/>
+                            <div className={s.item_img}>
+                                <BsFillHddNetworkFill />
+                            </div>
                             <h3>
                                 Work-Life Balance
                             </h3>

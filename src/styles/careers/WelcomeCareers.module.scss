@@ -7,6 +7,10 @@ $text-color: #B3B3B3;
 .welcome {
   margin-bottom: 10rem;
 
+  @media (max-width: 1440px) {
+    margin-bottom: 7.5rem;
+  }
+
   &__inner {
     padding: 3rem;
     display: flex;
