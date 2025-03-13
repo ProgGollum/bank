@@ -1,0 +1,68 @@
+//Variables
+$text-color: #B3B3B3;
+$bg-color: #1C1C1C;
+$bg-color-dark: #1A1A1A;
+$border-color: #262626;
+
+.releases {
+  margin-bottom: 10rem;
+
+  &__info {
+    max-width: 1310px;
+    margin-bottom: 5rem;
+    color: $text-color;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__item {
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: 40px 40px 16px 16px;
+    padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+
+    &_img {
+      max-width: fit-content;
+      margin-bottom: 3.125rem;
+
+      img {
+        border-radius: 30px 30px 12px 12px;
+      }
+    }
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .item__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1.25rem;
+      }
+
+      .item__disc {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 1.875rem;
+
+        &_text {
+          padding: 1rem 0.5rem;
+          background-color: $bg-color-dark;
+          border-radius: 4.25rem;
+          color: $text-color;
+        }
+      }
+
+      .item__text {
+        color: $text-color;
+      }
+    }
+  }
+}
