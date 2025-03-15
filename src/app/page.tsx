@@ -14,10 +14,9 @@ export default function () {
             <Product/>
             <Cases/>
             <Features/>
-            {/*<Faq/>*/}
+            <Faq/>
             {/*/!*height bag fix pls*!/*/}
             <Testimonials/>
-            {/*/!*swiper bag with tabs fix pls*!/*/}
             <Banner/>
         </main>
     )

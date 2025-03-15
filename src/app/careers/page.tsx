@@ -17,7 +17,7 @@ const Page = () => {
             <Values/>
             <Benefits/>
             <Job/>
-            {/*<Faq/>*/}
+            <Faq/>
             <Banner/>
         </main>
     );

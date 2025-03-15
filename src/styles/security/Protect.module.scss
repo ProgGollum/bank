@@ -1,0 +1,150 @@
+//Variables
+$text-color: #B3B3B3;
+$accent-color: #CAFF33;
+$bg-color: #1C1C1C;
+$gradient-color: linear-gradient(149.36deg, rgba(202, 255, 51, 0.05) -30.105%, rgba(202, 255, 51, 0) 28.234%);
+$border-color: #262626;
+
+
+.protect {
+  margin-bottom: 10rem;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 7.5rem;
+  }
+
+  &__info {
+    max-width: 1310px;
+    margin-bottom: 5rem;
+    color: $text-color;
+
+    @media (max-width: 1280px) {
+      max-width: 800px;
+    }
+
+    @media (max-width: 960px) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background: $gradient-color;
+    background-color: $bg-color;
+    padding: 3.75rem;
+    border-radius: 3.125rem 3.125rem 1.25rem 1.25rem;
+
+    @media (max-width: 1280px) {
+      padding: 3rem;
+    }
+
+    @media (max-width: 960px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3.75rem;
+    }
+
+    @media (max-width: 800px) {
+      padding: 3rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0;
+      background: transparent;
+    }
+  }
+
+  &__item {
+    max-width: 700px;
+    padding: 3.125rem;
+    background: $gradient-color;
+    border: 1px solid $border-color;
+    border-radius: 1.25rem;
+
+    @media (max-width: 1280px) {
+      padding: 2.75rem;
+    }
+
+    @media (max-width: 960px) {
+      padding: 3.125rem;
+    }
+
+    @media (max-width: 800px) {
+      padding: 2.75rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 1.5rem;
+    }
+
+    &_text {
+      color: $text-color;
+
+      @media (max-width: 960px) {
+        font-size: 1.125rem;
+      }
+
+      @media (max-width: 800px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.875rem;
+      }
+    }
+
+    &_name {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 1280px) {
+        margin-bottom: 1.25rem;
+      }
+
+      .name__img {
+        color: $accent-color;
+        font-size: 3rem ;
+
+        @media (max-width: 1280px) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: 960px) {
+          font-size: 3rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 2rem;
+        }
+      }
+
+      .name__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        @media (max-width: 1280px) {
+          font-size: 22px;
+        }
+
+        @media (max-width: 960px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 22px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+//Variables
+$text-color: #BFBFBF;
+$accent-color: #CAFF33;
+$bg-color-light: #333333;
+$bg-color: #1C1C1C;
+$bg-color-dark: #1A1A1A;
+$border-color: #262626;
+
+
+.login {
+  margin: 0 auto 10rem;
+  max-width: 1310px;
+
+  &__title {
+    margin-bottom: 1.25rem;
+  }
+
+  &__info {
+    max-width: 1120px;
+    color: $text-color;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__form {
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1160px) {
+      max-width: 950px;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+    margin-bottom: 2.5rem;
+
+    &_input {
+      width: 498px;
+      padding: 1.5rem;
+      background-color: $bg-color-dark;
+      border-radius: 88px;
+      border: 1px solid $border-color;
+
+      @media (max-width: 1160px) {
+        max-width: 350px;
+      }
+    }
+
+    .password__input {
+      display: flex;
+      align-items: center;
+
+      .password__check {
+        font-size: 1.5rem;
+        margin-left: -50px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__forgot {
+    text-decoration: underline !important;
+    margin-bottom: 2.5rem;
+  }
+
+  &__continue {
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .continue__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .continue__button {
+      width: 518px;
+      padding: 1.125rem 1.25rem;
+      background-color: $accent-color;
+      color: #000000;
+      font-size: 1.125rem;
+      font-weight: 400;
+      border-radius: 63px;
+    }
+
+    .signup {
+      background-color: $bg-color-light;
+      color: #ffffff;
+    }
+
+    .continue__variants {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .variants__text {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 1.875rem;
+
+        span {
+          display: block;
+          height: 2px;
+          width: 100px;
+          background-color: $text-color;
+        }
+
+        p {
+          color: $text-color;
+        }
+      }
+
+      .variants__icons {
+        display: flex;
+        gap: 2.5rem;
+        font-size: 3rem;
+        color: $accent-color;
+      }
+    }
+  }
+
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    position: relative;
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      width: 342px;
+      height: 342px;
+      top: 0;
+      right: 0;
+      background-image: url(../images/login/abstract.svg);
+    }
+  }
+}

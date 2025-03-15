@@ -32,8 +32,8 @@ const Header = () => {
                     </Link>
                     <Navbar/>
                     <div className="buttons">
-                        <Link href="" className="signup">Sign Up</Link>
-                        <Link href="" className="login">Login</Link>
+                        <Link href="/signup" className="signup">Sign Up</Link>
+                        <Link href="/login" className="login">Login</Link>
                     </div>
                     <div className="burger__btn" onClick={() => setMenuActive(!menuActive)}>
                         <span></span>
