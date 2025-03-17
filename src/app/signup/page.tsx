@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useState} from 'react';
-import s from "../../styles/Login.module.scss"
+import s from "../../styles/SignUp.module.scss"
 import classNames from "classnames";
 import Link from "next/link";
 
@@ -16,6 +16,7 @@ import {FaApple} from "react-icons/fa";
 import Testimonials from "@/components/Tabs/Testimonials/Testimonials";
 
 const Page = () => {
+
     const [shown, setShown] = useState<boolean>(false)
 
     const togglePass = () => {
@@ -25,22 +26,25 @@ const Page = () => {
 
     return (
         <main>
-            <section className={s.login}>
+            <section className={s.signup}>
                 <div className="container">
-                    <div className={s.login__wrapper}>
-                        <h2 className={classNames("sectionTitle", s.login__title)}><span>Login</span></h2>
-                        <p className={s.login__info}>Welcome back! Please log in to access your account.</p>
-                        <form className={s.login__form}>
-                            <div className={s.login__inputs}>
-                                <input className={s.login__inputs_input} type="text" placeholder="Enter your Email"/>
+                    <div className={s.signup__wrapper}>
+                        <h2 className={classNames("sectionTitle", s.signup__title)}><span>Sign Up</span></h2>
+                        <p className={s.signup__info}>Join our community today! Create an account to unlock exclusive
+                            features and personalized experiences.</p>
+                        <form className={s.signup__form}>
+                            <div className={s.signup__inputs}>
+                                <input className={s.signup__inputs_input} type="text" placeholder="Enter First name"/>
+                                <input className={s.signup__inputs_input} type="text" placeholder="Enter Last Name"/>
+                                <input className={s.signup__inputs_input} type="text" placeholder="Enter Your Email"/>
                                 <div className={s.password__inputs}>
                                     <input placeholder="Enter your password" type={shown ? "text" : "password"}
                                            className={s.password__inputs_input}/>
                                     <IoMdEye className={s.password__inputs_check} onClick={togglePass}/>
                                 </div>
                             </div>
-                            <Link className={s.login__forgot} href="">Forgot Password?</Link>
-                            <div className={s.login__continue}>
+                            <Link className={s.signup__forgot} href="">Forgot Password?</Link>
+                            <div className={s.signup__continue}>
                                 <div className={s.continue__buttons}>
                                     <button className={s.continue__button}>Login</button>
                                     <button className={classNames(s.continue__button, s.signup)}>Sign Up</button>

@@ -30,8 +30,8 @@ const Menu:FC<MenuProps> = ({pages, active, setActive}) => {
                     )}
                 </ul>
                 <div className={s.menu__buttons}>
-                    <Link href="" className="signup">Sign Up</Link>
-                    <Link href="" className="login">Login</Link>
+                    <Link href="/signup" className={s.signup}>Sign Up</Link>
+                    <Link href="/login" className={s.login}>Login</Link>
                 </div>
             </div>
         </div>

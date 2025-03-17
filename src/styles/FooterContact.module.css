@@ -27,17 +27,7 @@
     column-gap: 5px;
 }
 
-
-@media(max-width: 390px) {
-    .contacts {
-        margin-bottom: 1.875rem;
-    }
-
-    .contactsInner {
-        padding: 1.875rem 0;
-        gap: 1.25rem;
-    }
-
+@media (max-width: 650px) {
     .contactsList {
         display: flex;
         justify-content: center;
@@ -46,7 +36,18 @@
         gap: 1.25rem;
     }
 
+    .contactsInner {
+        padding: 1.875rem 0;
+    }
+
     .constactsItem {
         column-gap: 6px;
+    }
+}
+
+
+@media(max-width: 390px) {
+    .contacts {
+        margin-bottom: 1.875rem;
     }
 }

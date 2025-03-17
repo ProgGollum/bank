@@ -11,5 +11,5 @@ export interface IMenu {
     id: number;
     value: string;
     href: string;
-    icon: React.ReactElement;
+    icon?: React.ReactElement;
 }

@@ -15,13 +15,17 @@
 
 @media(max-width: 1440px) {
     .navItem {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
-@media(max-width: 670px) {
+@media(max-width: 760px) {
     .navBar {
         display: none;
+    }
+
+    .navItem {
+        font-size: 14px;
     }
 }
 

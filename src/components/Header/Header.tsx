@@ -15,10 +15,10 @@ import { MdSecurity } from "react-icons/md";
 const Header = () => {
 
     const pages = [
-        {id: 1, value: "Home", href: "/", icon: <IoHomeOutline color="#CAFF33" size="1rem"/>},
-        {id: 2, value: "Careers", href: "/careers", icon: <HiMiniPresentationChartLine color="#CAFF33" size="1rem"/>},
-        {id: 3, value: "About", href: "/about", icon: <FaCircleExclamation color="#CAFF33" size="1rem"/>},
-        {id: 4, value: "Security", href: "/security", icon: <MdSecurity color="#CAFF33" size="1rem"/>}
+        {id: 1, value: "Home", href: "/", icon: <IoHomeOutline color="#CAFF33"/>},
+        {id: 2, value: "Careers", href: "/careers", icon: <HiMiniPresentationChartLine color="#CAFF33"/>},
+        {id: 3, value: "About", href: "/about", icon: <FaCircleExclamation color="#CAFF33"/>},
+        {id: 4, value: "Security", href: "/security", icon: <MdSecurity color="#CAFF33"/>}
     ]
 
     const [menuActive, setMenuActive] = useState<boolean>(false)

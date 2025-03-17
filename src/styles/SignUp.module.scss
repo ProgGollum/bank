@@ -7,7 +7,7 @@ $bg-color-dark: #1A1A1A;
 $border-color: #262626;
 
 
-.login {
+.signup {
   margin: 0 auto 10rem;
   max-width: 1310px;
 
@@ -56,13 +56,13 @@ $border-color: #262626;
   }
 
   &__inputs {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
     margin-bottom: 2.5rem;
 
-    @media (max-width: 960px) {
-      flex-direction: column;
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
     }
 
     @media (max-width: 480px) {
@@ -242,7 +242,7 @@ $border-color: #262626;
     align-items: center;
     padding: 100px 150px;
     position: relative;
-    background-image: url(../images/login/login-bg.png);
+    background-image: url(../images/signup/sigup-bg.png);
     background-size: cover;
     border: 1px solid $border-color;
 
@@ -265,7 +265,7 @@ $border-color: #262626;
     @media (max-width: 480px) {
       padding: 30px;
     }
-    
+
     &::after {
       display: inline-block;
       content: "";
@@ -274,7 +274,7 @@ $border-color: #262626;
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url(../images/login/abstract.svg);
+      background-image: url(../images/signup/abstract.svg);
 
       @media (max-width: 640px) {
         width: 250px;
