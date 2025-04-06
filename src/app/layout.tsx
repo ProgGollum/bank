@@ -3,6 +3,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import '@mantine/core/styles.css';
 import {createTheme, MantineProvider} from "@mantine/core";
+import {UserProvider} from "@/context/Authcontext";
 
 export const metadata = {
     title: 'Your Bank',
@@ -18,9 +19,11 @@ export default function RootLayout({
         <html lang="en">
           <body>
             <MantineProvider defaultColorScheme="dark">
-                <Header/>
-                {children}
-                <Footer/>
+                <UserProvider>
+                    <Header/>
+                    {children}
+                    <Footer/>
+                </UserProvider>
             </MantineProvider>
           </body>
         </html>

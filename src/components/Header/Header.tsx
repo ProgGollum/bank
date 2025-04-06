@@ -11,6 +11,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { HiMiniPresentationChartLine } from "react-icons/hi2";
 import { FaCircleExclamation } from "react-icons/fa6";
 import { MdSecurity } from "react-icons/md";
+import {useAuth} from "@/context/Authcontext";
 
 const Header = () => {
 
@@ -22,6 +23,10 @@ const Header = () => {
     ]
 
     const [menuActive, setMenuActive] = useState<boolean>(false)
+    const isLogout = true;
+
+    const auth = useAuth()
+
 
     return (
         <header className="header">
@@ -31,10 +36,20 @@ const Header = () => {
                         <Image src={logo} alt=""/>
                     </Link>
                     <Navbar/>
-                    <div className="buttons">
-                        <Link href="/signup" className="signup">Sign Up</Link>
-                        <Link href="/login" className="login">Login</Link>
-                    </div>
+                    {!auth?.isAuth
+                        ? <div className="buttons">
+                            <Link href="/signup" className="signup">Sign Up</Link>
+                            <Link href="/login" className="login">Login</Link>
+                        </div>
+                        :
+                        <button
+                            className="logout"
+                            onClick={() => auth?.logout(isLogout)}
+                        >
+                            Logout
+                        </button>
+                    }
+
                     <div className="burger__btn" onClick={() => setMenuActive(!menuActive)}>
                         <span></span>
                     </div>
